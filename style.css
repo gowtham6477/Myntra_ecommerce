@@ -1,0 +1,275 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.nav-links{
+    display: flex;
+    column-gap:20px ;
+    
+}
+
+.nav-link a{   
+    text-decoration: none ;
+    color:rgb(13, 14, 13);   
+}
+
+.nav-link a:hover{
+    text-decoration: underline;
+    color:rgb(13, 14, 13);  
+
+}
+.toggle{
+    display:none;
+}
+.side-nav-bar {
+    background-color:rgb(13, 14, 13);
+    width:30%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    color:rgb(233, 243, 243);
+    transition: 1s;
+   
+   
+}
+.side-nav-link{
+    margin-bottom: 30px;
+
+}
+.side-nav-links a{
+    text-decoration: none;
+    color: azure;
+
+}
+.side-nav-links a:hover{
+    text-decoration: underline;
+    
+}
+.header{
+    display:flex;
+    justify-content: center;
+    gap:100px;
+    padding: 50px;
+}
+.button{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background-color:rgb(5, 5, 5); 
+    color:aliceblue ;
+    border-radius: 25px;
+    cursor: pointer;
+    
+
+}
+.service{
+    padding: 20px;;
+}
+.service-container1{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.service-container2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+
+}
+.service-container2{
+    div{
+        background-color: rgb(255, 221, 169);
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+.new-arrival{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color:rgb(5, 5, 5) ;
+    position: absolute;
+    top:50%;
+    left:18%;
+    border-radius: 10px;
+    border: none;
+}
+.news{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.news input{
+    padding: 10px;
+    width:80vw;
+    margin-bottom: 10px;
+    border:solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: azure;
+    background-color:rgb(5, 5, 5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding:40px;
+    color: azure;
+    background-color:rgb(5, 5, 5);
+
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border:solid black 3px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+.product-search input:focus{
+   outline:none;
+    
+}
+.products{
+    padding: 20px;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+  text-align: center;
+  flex-basis: 20%;
+
+    
+}
+.product-box img{
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    background: #1d232c;
+    padding:50px;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width:700px) {
+    .contact{
+        font-size: 2.5vw;
+    }
+}
+
+.contact{
+    
+    background-color: #1D232C;
+    padding: 40px;
+    width: 65vw;
+   align-items: center;
+   margin: 0 auto;
+}
+.contact h2{
+   color: white;
+}
+.contact-fields h4{
+   color: white;
+}
+.box{
+   padding: 10px;
+   width: 62vw;
+   margin-top: 10px;
+}
+.btn{
+   background-color: #008CBA;
+   color: white;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+.msg-box{
+   padding: 25px;
+   width: 60vw;
+   margin-top: 10px;
+}
+
+/*media query*/
+@media screen and (max-width:600px) {
+    .toggle{
+        display:block;
+    } 
+    .nav-links{
+    display:none;}
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    .contact-input{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: gap;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    }
